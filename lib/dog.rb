@@ -13,7 +13,7 @@ class Dog
   end
 
   def self.all
-    @@all_cats
+    @@all_dogs
   end
 
 end
