@@ -15,5 +15,5 @@ class Dog
   def self.all
     @@all_cats
   end
-  
+
 end
