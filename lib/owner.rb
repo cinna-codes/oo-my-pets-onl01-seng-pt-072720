@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_reader :species, :name
 
@@ -32,6 +33,8 @@ class Owner
   def dogs
     Dog.all.select { |o| o.owner == self }
   end
+
+  binding.pry
 
   def buy_cat(name)
     Cat.all.select { |c| c.name == name }.owner=(self)
