@@ -39,7 +39,7 @@ class Owner
   binding.pry
 
   def buy_cat(name)
-    Cat.all.select { |c| c.name == name }.owner=(self)
+    Cat.all.find { |c| c.name == name }.owner = self
   end
 
 end
