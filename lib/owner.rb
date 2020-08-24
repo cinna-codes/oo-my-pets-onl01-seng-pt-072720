@@ -1,7 +1,6 @@
 #require 'pry'
 class Owner
   attr_accessor :all_pets
-  attr_writer :cats, :dogs
   attr_reader :species, :name
 
   @@all_owners = []
@@ -10,8 +9,6 @@ class Owner
     @name = name
     @species = "human"
     #@all_pets = []
-    @cats = []
-    @dogs = []
     @@all_owners << self
   end
 
@@ -42,9 +39,9 @@ class Owner
 #  binding.pry
 
   def buy_cat(name)
-    Cat.all.find { |c| c.name == name }.owner = self
-    #self.all_pets << Cat.all.find { |c| c.name == name }
-    self.cats
+    # Cat.all.find { |c| c.name == name }.owner = self
+    # self.all_pets << Cat.all.find { |c| c.name == name }
+
   end
 
 end
