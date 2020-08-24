@@ -1,5 +1,6 @@
 require 'pry'
 class Owner
+  attr_accessor :all_pets
   attr_reader :species, :name
 
   @@all_owners = []
