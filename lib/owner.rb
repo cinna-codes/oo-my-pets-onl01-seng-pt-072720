@@ -5,7 +5,8 @@ class Owner
   @@all_owners = []
 
   def initialize
-
+    @species = "Human"
+    @@owned_pets = []
   end
 
 end
