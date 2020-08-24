@@ -8,7 +8,7 @@ class Owner
     @name = name
     @species = "Human"
     @owned_pets = []
-    @@all << self
+    @@all_owners << self
   end
 
   def say_species
@@ -16,7 +16,7 @@ class Owner
   end
 
   def self.all
-    @@all
+    @@all_owners
   end
 
   def self.count
@@ -24,7 +24,7 @@ class Owner
   end
 
   def self.reset_all
-    @@all.clear
+    @@all_owners.clear
   end
 
 end
