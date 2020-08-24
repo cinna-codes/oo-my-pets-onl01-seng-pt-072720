@@ -4,7 +4,8 @@ class Owner
 
   @@all_owners = []
 
-  def initialize
+  def initialize(name)
+    @name = name
     @species = "Human"
     @owned_pets = []
     @@all_owners << self
@@ -14,8 +15,12 @@ class Owner
     puts "#{species}"
   end
 
-  def all
+  def self.all
     @@all_owners
+  end
+
+  def self.count
+    self.all.length
   end
 
 end
