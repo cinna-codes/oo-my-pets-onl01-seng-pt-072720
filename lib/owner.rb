@@ -1,7 +1,7 @@
 #require 'pry'
 class Owner
   attr_accessor :all_pets
-  attr_writer :cats
+  attr_writer :cats, :dogs
   attr_reader :species, :name
 
   @@all_owners = []
@@ -9,7 +9,9 @@ class Owner
   def initialize(name)
     @name = name
     @species = "human"
-    @all_pets = []
+    #@all_pets = []
+    @cats = []
+    @dogs = []
     @@all_owners << self
   end
 
