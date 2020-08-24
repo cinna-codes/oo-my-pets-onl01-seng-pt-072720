@@ -9,8 +9,8 @@ class Owner
     @name = name
     @species = "human"
     #@all_pets = []
-    @owners_cats = []
-    @owners_dogs = []
+    # @owners_cats = []
+    # @owners_dogs = []
     @@all_owners << self
   end
 
@@ -46,6 +46,10 @@ class Owner
 
   def buy_dog(name)
     Dog.new(name, self)
+  end
+
+  def walk_dogs
+    self.dogs.mood = "happy"
   end
 
 end
