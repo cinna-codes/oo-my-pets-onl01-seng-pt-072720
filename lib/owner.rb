@@ -36,7 +36,7 @@ class Owner
   end
 
   def buy_cat(name)
-    @owned_pets << Cat.all.select { |c| c.name == name }
+    Cat.all.select { |c| c.name == name }
   end
 
 end
