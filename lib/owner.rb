@@ -14,4 +14,8 @@ class Owner
     puts "#{species}"
   end
 
+  def all
+    @@all_owners
+  end
+
 end
