@@ -59,4 +59,8 @@ class Owner
     self.dogs.each { |d| d.owner = nil }
   end
 
+  def list_pets
+
+  end
+
 end
