@@ -40,6 +40,7 @@ class Owner
 
   def buy_cat(name)
     Cat.all.find { |c| c.name == name }.owner = self
+    self.all_pets << Cat.all.find { |c| c.name == name }
   end
 
 end
