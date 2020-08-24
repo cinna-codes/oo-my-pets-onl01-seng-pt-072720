@@ -9,4 +9,8 @@ class Owner
     @owned_pets = []
   end
 
+  def say_species
+    puts @species
+  end
+
 end
